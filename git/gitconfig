@@ -1,0 +1,38 @@
+[include]
+  path = ~/.gitconfig.local
+
+[includeIf "gitdir:~/Work/"]
+  path = ~/.gitconfig.work
+
+[user]
+  name = Kurniawan
+
+[core]
+  editor = nvim
+
+[init]
+  defaultBranch = main
+
+[pull]
+  rebase = true
+
+[fetch]
+  prune = true
+
+[branch]
+  sort = -committerdate
+
+[commit]
+  verbose = true
+
+[alias]
+  co = checkout
+  cb = checkout -b
+  cae = commit --allowed-empty
+  c = cherry-pick
+  cc = cherry-pick --continue
+  ups = push --set-upstream origin
+  ca = commit -a
+  log = log --oneline --graph --decorate --all
+  po = pull origin
+  st = status
