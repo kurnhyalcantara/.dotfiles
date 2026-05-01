@@ -12,3 +12,4 @@ yang dapat di-setup **secara otomatis** pada laptop baru / fresh install macOS.
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/kurnhyalcantara/dotfiles/main/bootstrap.sh | zsh
+```

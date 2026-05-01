@@ -21,4 +21,18 @@ autoload -Uz compinit
 compinit
 
 # ALIASES
-alias ll='ls -lah'
+alias ll='ls -lh'
+
+# Go path
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="/Users/alcantara/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/alcantara/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+# Added by Antigravity
+export PATH="/Users/alcantara/.antigravity/antigravity/bin:$PATH"
+
+. "$HOME/.local/bin/env"
+
+# Added by Windsurf
+export PATH="/Users/alcantara/.codeium/windsurf/bin:$PATH"
